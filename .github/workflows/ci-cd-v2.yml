@@ -119,6 +119,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT || 22 }}
+          command_timeout: 30m
           script: |
             chmod +x /tmp/scripts/deploy.sh
             /tmp/scripts/deploy.sh \
