@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   app:
-    image: ${DOCKER_IMAGE:-your-dockerhub-username/ci-cd-demo}:${IMAGE_TAG:-latest}
+    image: ${DOCKER_IMAGE:-ghcr.io/zdrepository/ci-cd-demo}:${IMAGE_TAG:-latest}
     container_name: ci_cd_demo
     restart: unless-stopped
     ports:
